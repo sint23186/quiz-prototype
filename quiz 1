@@ -1,0 +1,28 @@
+#Taylor sinnot
+#This is a quiz about the minecraft movie
+
+#what custom weopon did jason mamoa create
+#Buckcuket, Tater laucher, The mace
+
+#why do the piglins what to invade the overworld
+#To gain immortality, To kidnap Steve, To get more gold
+
+#where was the minecraft movie filmed
+#Auckland, Hamilton, Christchurch
+
+#what colour are the sheep in steves world
+#White, Brown, Pink
+
+INT_POINTS = 5
+INT_SCORE = 0
+str_choice = ''
+list_answers =['Malgossia','Buckcuket', 'To get more gold', 'Auckland', 'Pink']
+str_user_name = ''
+str_user_name = input("Hello user, what's your name?  ")
+
+#who is the main villian of the minecraft movie 
+#The great hog, Malgossia, Steve
+print('Who is the main villian of the minecraft movie?')
+x = (f'The great hog, Malgossia, or steve: ')
+str_choice = input(x)
+if str_choice == 'Malgossia':
