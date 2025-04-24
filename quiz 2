@@ -1,4 +1,10 @@
 #Taylor sinnott
+Answers =['auckland','pink','malgossia','gold','buckchucket']
+qustion =["where was the minecraft movie filmed?",
+"what colour are the sheep in steves world?",
+"who is the main villian of the minecraft movie?",
+"why do the piglins what to invade the overworld?",
+"what custom weopon did jason mamoa create?"]
 
 def run_quiz(questions):
     score = 0
@@ -12,11 +18,11 @@ def run_quiz(questions):
     print(f"You scored {score} out of {len(questions)}.")
 
 questions = {
-    "where was the minecraft movie filmed?": "auckland",
-    "what colour are the sheep in steves world?": "pink",
-    "who is the main villian of the minecraft movie?": "malgossia",
-    "why do the piglins what to invade the overworld?":"gold",
-    "what custom weopon did jason mamoa create?":"buckchuket" ,
+    qustion[0]: Answers[0],
+    qustion[1]: Answers[1],
+    qustion[2]: Answers[2],
+    qustion[3]: Answers[3],
+    qustion[4]: Answers[4],
 }
 
 run_quiz(questions)
