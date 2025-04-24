@@ -1,0 +1,22 @@
+#Taylor sinnott
+
+def run_quiz(questions):
+    score = 0
+    for question, answer in questions.items():
+        user_answer = input(f"{question} ")
+        if user_answer.lower() == answer.lower():
+            print("Correct!")
+            score += 1
+        else:
+            print(f"Incorrect. The correct answer is {answer}.")
+    print(f"You scored {score} out of {len(questions)}.")
+
+questions = {
+    "where was the minecraft movie filmed?": "auckland",
+    "what colour are the sheep in steves world?": "pink",
+    "who is the main villian of the minecraft movie?": "malgossia",
+    "why do the piglins what to invade the overworld?":"gold",
+    "what custom weopon did jason mamoa create?":"buckchuket" ,
+}
+
+run_quiz(questions)
