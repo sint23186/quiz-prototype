@@ -1,11 +1,11 @@
 #Taylor sinnott
 Answers =['auckland','pink','malgossia','gold','buckchucket'] 
 qustion =["where was the minecraft movie filmed?",
-"what colour are the sheep in steves world?",       # i made two list to make the qustion makeing easier 
+"what colour are the sheep in steves world?",       
 "who is the main villian of the minecraft movie?",
 "why do the piglins what to invade the overworld?",
-"what custom weopon did jason mamoa create?"]
-
+"what custom weapon did jason mamoa create?"]
+# i made two lists to make the questions making easier 
 def run_quiz(questions):
     score = 0
     for question, answer in questions.items():
@@ -15,16 +15,21 @@ def run_quiz(questions):
             score += 1 # to give you a point if you are correct
         else:
             print(f"Incorrect. The correct answer is {answer}.")
-    print(f"You scored {score} out of {len(questions)}.")       #displays how many qustion you got right and how many you got right
+    print(f"You scored {score} out of {len(questions)}.")   
+    #displays how many qustion you got right 
 
-print('This is a quiz about the minecraft movie just type in your answer and if your corecet you will be told')
+print('This is a quiz about the minecraft movie just type in your answer') 
+print('if your corecet you will be told')
 
 questions = {
-    qustion[0]: Answers[0],    # i used lists to make this part cleaner and easier to understand
+    qustion[0]: Answers[0],  # i used lists to make this part cleaner and easier to understand
     qustion[1]: Answers[1],
     qustion[2]: Answers[2],
     qustion[3]: Answers[3],
     qustion[4]: Answers[4],
-}
-
-run_quiz(questions)
+} 
+while True:
+    run_quiz(questions)
+    play_again = input("Play again? (yes/no): ")
+    if play_again.lower() != "yes":  # implimented a loop for players to try again
+        break
